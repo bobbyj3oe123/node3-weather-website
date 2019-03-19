@@ -1,0 +1,25 @@
+<!-- this will get served by default -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  </head>
+  <body>
+    {{>header}}
+
+    <p>Use this site to get you weather!</p>
+
+    <form>
+      <input type="text" placeholder="Location">
+      <button type="submit" name="button">Search</button>
+    </form>
+
+    <p id="message-1"></p>
+    <p id="message-2"></p>
+
+    {{>footer}}
+    <script type="text/javascript" src="/js/app.js"></script>
+  </body>
+</html>
