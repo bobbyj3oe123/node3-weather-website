@@ -8,7 +8,8 @@ const messageTwo = document.querySelector('#message-2');
 const searchLocation = (location) => {
   messageOne.textContent = '...Loading Contents';
 
-  fetch(`http://localhost:3000/weather?address=${location}`)
+  // remove local host 3000 so it works on heroku as well
+  fetch(`/weather?address=${location}`)
   .then((response) => {
     return response.json();
   })
