@@ -1,6 +1,4 @@
 // this is client side javascript
-console.log('Client side javascript file is loaded!');
-
 const weatherForm = document.querySelector('form');
 const searchElement = document.querySelector('input');
 const messageOne = document.querySelector('#message-1');
@@ -20,7 +18,7 @@ const searchLocation = (location) => {
     } else {
       messageTwo.textContent = `${data.location}, ${data.forecast}`;
     }
-    
+
     messageOne.textContent = '';
   });
 
